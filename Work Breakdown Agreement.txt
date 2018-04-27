@@ -1,0 +1,11 @@
+FIT2099 Assignment 1
+Work Breakdown Agreement
+
+Loi Chai Lam (2813 6179)
+Vinitha Raj Rajagopal Muthu (2824 9542)
+
+Loi Chai Lam:
+All the design and coding for Leave Affordance, Force ability, Lightsabres and Ben Kenobi.
+
+Vinitha:
+All the design and coding for Droids.
