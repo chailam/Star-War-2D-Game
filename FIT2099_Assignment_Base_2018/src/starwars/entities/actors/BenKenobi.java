@@ -2,6 +2,7 @@ package starwars.entities.actors;
 
 import edu.monash.fit2099.simulator.space.Direction;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
+import starwars.SWActor;
 import starwars.SWLegend;
 import starwars.SWWorld;
 import starwars.Team;
@@ -26,6 +27,7 @@ public class BenKenobi extends SWLegend {
 
 	private static BenKenobi ben = null; // yes, it is OK to return the static instance!
 	private Patrol path;
+	private SWActor student;
 	
 	private BenKenobi(MessageRenderer m, SWWorld world, Direction [] moves) {
 		super(Team.GOOD, 1000, m, world);
@@ -42,8 +44,14 @@ public class BenKenobi extends SWLegend {
 		return ben;
 	}
 	
+	public void setStudent(SWActor a) {
+		student = a;
+	}
+	
 	@Override
 	protected void legendAct() {
+		
+		this.train(student);
 
 		if(isDead()) {
 			return;
@@ -61,9 +69,8 @@ public class BenKenobi extends SWLegend {
 			Direction newdirection = path.getNext();
 			say(getShortDescription() + " moves " + newdirection);
 			Move myMove = new Move(newdirection, messageRenderer, world);
-
+			
 			scheduler.schedule(myMove, this, 1);
 		}
 	}
-
 }

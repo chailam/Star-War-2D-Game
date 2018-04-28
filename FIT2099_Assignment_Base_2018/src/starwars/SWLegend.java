@@ -60,4 +60,13 @@ public abstract class SWLegend extends SWActor {
 	}
 
 	protected abstract void legendAct();
+	
+	protected void train(SWActor a) {
+		SWLocation thisLocation = this.world.getEntityManager().whereIs(this);
+		SWLocation studentLocation = this.world.getEntityManager().whereIs(a);
+		if (thisLocation == studentLocation) {
+			say("Lukeeeeeeee!");
+			say("SWActor hitpoints!!!"+a.getHitpoints());
+		}
+	}
 }

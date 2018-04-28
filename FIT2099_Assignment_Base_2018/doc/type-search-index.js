@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"edu.monash.fit2099.gridworld","l":"Grid"},{"p":"edu.monash.fit2099.gridworld","l":"Grid.CompassBearing"}]
