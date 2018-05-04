@@ -43,7 +43,8 @@ public class LightSaber extends SWEntity {
 		this.hitpoints = 100000; // start with a nice powerful, sharp axe
 		
 		this.addAffordance(new Take(this, m));//add the take affordance so that the LightSaber can be taken by SWActors
-		this.capabilities.add(Capability.WEAPON);// it's a weapon.  
+		this.capabilities.add(Capability.FORCEABLE);// it's a weapon which need force when using it. 
+		this.setForceNeeded(10); //The force needed by LightSaber when using it
 	}
 	
 	
@@ -66,7 +67,7 @@ public class LightSaber extends SWEntity {
 	 */
 	@Override
 	public String getSymbol() {
-		return "†";
+		return "鈥�";
 	}
 	
 	

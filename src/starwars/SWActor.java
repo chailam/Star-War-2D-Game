@@ -246,6 +246,24 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	}
 	
 	/**
+	 * This method will return the ForceAbility in <code>TheForce</code> of the <code>SWActor</code>
+	 * @return true if the actor has force ability, otherwise false
+	 * @author ChaiLam
+	 */
+	public boolean hasForceAbility() {
+		return this.force.checkForceAbility();
+	}
+	
+	/**
+	 * This method will return the forceNumber in <code>TheForce</code> of the <code>SWActor</code>
+	 * @return the value of force of the actor
+	 * @author ChaiLam
+	 */
+	public int actorForceNumber() {
+		return this.force.getForceNumber();
+	}
+	
+	/**
 	 * This method will poll this <code>SWActor</code>'s current <code>Location loc</code>
 	 * to find potential exits, and replaces all the instances of <code>Move</code>
 	 * in this <code>SWActor</code>'s command set with <code>Moves</code> to the new exits.

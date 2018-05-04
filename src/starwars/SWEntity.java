@@ -23,6 +23,9 @@ public class SWEntity extends Entity implements SWEntityInterface {
 	
 	/**The amount of <code>hitpoints</code> of this <code>SWEntity</code>.*/
 	protected int hitpoints = 0; // Not all non-actor entities will make use of this
+	
+	/**The force needed for the entity to be used*/
+	private int forceNeeded;
 
 	/**
 	 * Constructor for this <code>SWEntity</code>. Will initialize this <code>SWEntity</code>'s
@@ -85,4 +88,21 @@ public class SWEntity extends Entity implements SWEntityInterface {
 		this.hitpoints -= damage;
 	}
 	
+	/**
+	 * To get the force needed of the entity to be used.
+	 * @author ChaiLam
+	 * @return forceNeeded the force needed of the entity
+	 */
+	public int getForceNeeded() {
+		return forceNeeded;
+	}
+	
+	/**
+	 *Set the force needed of the entity to be used.
+	 * @author ChaiLam
+	 * @param value the value of force needed of the entity
+	 */
+	public void setForceNeeded(int value) {
+		forceNeeded = value;
+	}
 }
