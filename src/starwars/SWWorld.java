@@ -156,6 +156,7 @@ public class SWWorld extends World {
 		canteen.setHitpoints(500);
 		entityManager.setLocation(canteen, loc);
 		canteen.addAffordance(new Take(canteen, iface));
+		/*Add the Leave affordance for the canteen*/
 		canteen.addAffordance(new Leave(canteen, iface));
 
 		// an oil can treasure
@@ -168,6 +169,7 @@ public class SWWorld extends World {
 		// add a Take affordance to the oil can, so that an actor can take it
 		entityManager.setLocation(oilcan, loc);
 		oilcan.addAffordance(new Take(oilcan, iface));
+		/*Add the Leave affordance for the oilcan*/
 		oilcan.addAffordance(new Leave(oilcan, iface));
 		
 		// a lightsaber
