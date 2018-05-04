@@ -29,8 +29,8 @@ public class BenKenobi extends SWLegend {
 	private Patrol path;
 	private SWActor student;
 	
-	private BenKenobi(MessageRenderer m, SWWorld world, Direction [] moves) {
-		super(Team.GOOD, 1000, m, world);
+	private BenKenobi(MessageRenderer m, SWWorld world, Direction [] moves, boolean ability, int value) {
+		super(Team.GOOD, 1000, m, world,ability,value);
 		path = new Patrol(moves);
 		this.setShortDescription("Ben Kenobi");
 		this.setLongDescription("Ben Kenobi, an old man who has perhaps seen too much");
@@ -38,8 +38,8 @@ public class BenKenobi extends SWLegend {
 		setItemCarried(bensweapon);
 	}
 
-	public static BenKenobi getBenKenobi(MessageRenderer m, SWWorld world, Direction [] moves) {
-		ben = new BenKenobi(m, world, moves);
+	public static BenKenobi getBenKenobi(MessageRenderer m, SWWorld world, Direction [] moves,boolean ability, int value) {
+		ben = new BenKenobi(m, world, moves,ability,value);
 		ben.activate();
 		return ben;
 	}

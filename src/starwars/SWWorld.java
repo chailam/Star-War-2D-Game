@@ -105,7 +105,7 @@ public class SWWorld extends World {
                 CompassBearing.EAST, CompassBearing.EAST,
                 CompassBearing.NORTHWEST, CompassBearing.NORTHWEST};
 		
-		BenKenobi ben = BenKenobi.getBenKenobi(iface, this, patrolmoves);
+		BenKenobi ben = BenKenobi.getBenKenobi(iface, this, patrolmoves,true,100);
 		ben.setSymbol("B");
 		loc = myGrid.getLocationByCoordinates(4,  5);
 		entityManager.setLocation(ben, loc);
@@ -114,7 +114,7 @@ public class SWWorld extends World {
 		loc = myGrid.getLocationByCoordinates(5,9);
 		
 		// Luke
-		Player luke = new Player(Team.GOOD, 100, iface, this);
+		Player luke = new Player(Team.GOOD, 100, iface, this,true,0);
 		luke.setShortDescription("Luke");
 		entityManager.setLocation(luke, loc);
 		luke.resetMoveCommands(loc);
@@ -178,7 +178,7 @@ public class SWWorld extends World {
 		entityManager.setLocation(blaster, loc);
 		
 		// A Tusken Raider
-		TuskenRaider tim = new TuskenRaider(10, "Tim", iface, this);
+		TuskenRaider tim = new TuskenRaider(10, "Tim", iface, this,false,-1);
 		tim.setSymbol("âˆ");
 		loc = myGrid.getLocationByCoordinates(4,3);
 		entityManager.setLocation(tim, loc);

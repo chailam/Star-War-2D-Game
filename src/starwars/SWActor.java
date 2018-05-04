@@ -53,6 +53,9 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	/**A set of <code>Capabilities</code> of this <code>SWActor</code>*/
 	private HashSet<Capability> capabilities;
 	
+	/**The Force ability of the <code>SWActor</code>*/
+	protected TheForce force;
+	
 	/**
 	 * Constructor for the <code>SWActor</code>.
 	 * <p>
@@ -68,19 +71,22 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	 * @param 	hitpoints initial hitpoints of this <code>SWActor</code> to start with
 	 * @param 	m	message renderer for this <code>SWActor</code> to display messages
 	 * @param 	world the <code>World</code> to which <code>SWActor</code> belongs to
+	 * @param	ability the ability of the <code>SWActor</code> to use <code>TheForce</code>.
+	 * @param	value the value of the force number of <code>SWActor</code> in <code>TheForce</code>.
 	 * 
 	 * @see 	#team
 	 * @see 	#hitpoints
 	 * @see 	#world
 	 * @see 	starwars.actions.Attack
 	 */
-	public SWActor(Team team, int hitpoints, MessageRenderer m, SWWorld world) {
+	public SWActor(Team team, int hitpoints, MessageRenderer m, SWWorld world, boolean ability, int value) {
 		super(m);
 		actions = new HashSet<SWActionInterface>();
 		this.team = team;
 		this.hitpoints = hitpoints;
 		this.world = world;
 		this.symbol = "@";
+		this.force = new TheForce(ability,value);
 		
 		//SWActors are given the Attack affordance hence they can be attacked
 		SWAffordance attack = new Attack(this, m);
