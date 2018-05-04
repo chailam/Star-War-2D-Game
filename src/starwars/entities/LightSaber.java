@@ -3,6 +3,7 @@ package starwars.entities;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
 import starwars.Capability;
 import starwars.SWEntity;
+import starwars.actions.Leave;
 import starwars.actions.Take;
 
 /**
@@ -43,6 +44,8 @@ public class LightSaber extends SWEntity {
 		this.hitpoints = 100000; // start with a nice powerful, sharp axe
 		
 		this.addAffordance(new Take(this, m));//add the take affordance so that the LightSaber can be taken by SWActors
+		this.addAffordance(new Leave(this, m));//add the Leave affordance so that the LightSaber can be leaved
+
 		this.capabilities.add(Capability.FORCEABLE);// it's a weapon which need force when using it. 
 		this.setForceNeeded(10); //The force needed by LightSaber when using it
 	}

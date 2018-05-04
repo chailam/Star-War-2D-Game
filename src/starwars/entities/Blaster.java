@@ -3,6 +3,7 @@ package starwars.entities;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
 import starwars.Capability;
 import starwars.SWEntity;
+import starwars.actions.Leave;
 import starwars.actions.Take;
 
 /**
@@ -46,6 +47,7 @@ public class Blaster extends SWEntity {
 		this.hitpoints = 100; // start with a fully charged pistol
 		
 		this.addAffordance(new Take(this, m));//add the Take affordance so that the blaster can be picked up
+		this.addAffordance(new Leave(this, m));//add the Leave affordance so that the blaster can be leaved
 		
 													//the blaster has capabilities 
 		this.capabilities.add(Capability.WEAPON);   // and WEAPON so that it can be used to attack

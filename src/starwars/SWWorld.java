@@ -6,6 +6,7 @@ import edu.monash.fit2099.simulator.space.Direction;
 import edu.monash.fit2099.simulator.space.Location;
 import edu.monash.fit2099.simulator.space.World;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
+import starwars.actions.Leave;
 import starwars.actions.Take;
 import starwars.entities.*;
 import starwars.entities.actors.*;
@@ -105,7 +106,7 @@ public class SWWorld extends World {
                 CompassBearing.EAST, CompassBearing.EAST,
                 CompassBearing.NORTHWEST, CompassBearing.NORTHWEST};
 		
-		BenKenobi ben = BenKenobi.getBenKenobi(iface, this, patrolmoves,true,100);
+		BenKenobi ben = BenKenobi.getBenKenobi(iface, this, patrolmoves,true,0);
 		ben.setSymbol("B");
 		loc = myGrid.getLocationByCoordinates(4,  5);
 		entityManager.setLocation(ben, loc);
@@ -114,7 +115,7 @@ public class SWWorld extends World {
 		loc = myGrid.getLocationByCoordinates(5,9);
 		
 		// Luke
-		Player luke = new Player(Team.GOOD, 100, iface, this,true,0);
+		Player luke = new Player(Team.GOOD, 100, iface, this,true,50);////
 		luke.setShortDescription("Luke");
 		entityManager.setLocation(luke, loc);
 		luke.resetMoveCommands(loc);
@@ -155,6 +156,7 @@ public class SWWorld extends World {
 		canteen.setHitpoints(500);
 		entityManager.setLocation(canteen, loc);
 		canteen.addAffordance(new Take(canteen, iface));
+		canteen.addAffordance(new Leave(canteen, iface));
 
 		// an oil can treasure
 		loc = myGrid.getLocationByCoordinates(1,5);
@@ -166,6 +168,7 @@ public class SWWorld extends World {
 		// add a Take affordance to the oil can, so that an actor can take it
 		entityManager.setLocation(oilcan, loc);
 		oilcan.addAffordance(new Take(oilcan, iface));
+		oilcan.addAffordance(new Leave(oilcan, iface));
 		
 		// a lightsaber
 		LightSaber lightSaber = new LightSaber(iface);

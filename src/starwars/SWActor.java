@@ -264,6 +264,18 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	}
 	
 	/**
+	 * Returns the world to which this <code>SWActor</code> belongs to.
+	 * <p>
+	 * Useful in comparing the location different <code>SWActor</code> belong to.
+	 * 
+	 * @return 	the world of this <code>SWActor</code>
+	 * @see 	#world
+	 */
+	public SWWorld getWorld() {
+		return world;
+	}
+	
+	/**
 	 * This method will poll this <code>SWActor</code>'s current <code>Location loc</code>
 	 * to find potential exits, and replaces all the instances of <code>Move</code>
 	 * in this <code>SWActor</code>'s command set with <code>Moves</code> to the new exits.
