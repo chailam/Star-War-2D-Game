@@ -35,7 +35,8 @@ public class TuskenRaider extends SWActor {
 	 * @param world
 	 *            the <code>SWWorld</code> world to which this
 	 *            <code>TuskenRaider</code> belongs to
-	 * 
+	 * @param	ability the ability of the Tusken Raider to use <code>TheForce</code>.
+	 * @param	value the value of the force number of Tusken Raider in <code>TheForce</code>.
 	 */
 	public TuskenRaider(int hitpoints, String name, MessageRenderer m, SWWorld world, boolean ability, int value) {
 		super(Team.TUSKEN, 50, m, world,ability,value);

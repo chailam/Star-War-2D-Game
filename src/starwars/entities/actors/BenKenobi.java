@@ -29,6 +29,9 @@ public class BenKenobi extends SWLegend {
 	private Patrol path;
 	private SWActor student;
 	
+	/*The value which BenKenobi can increase the force number of SWActor*/
+	private int canAddForce = 5;
+	
 	private BenKenobi(MessageRenderer m, SWWorld world, Direction [] moves, boolean ability, int value) {
 		super(Team.GOOD, 1000, m, world,ability,value);
 		path = new Patrol(moves);
@@ -51,7 +54,8 @@ public class BenKenobi extends SWLegend {
 	@Override
 	protected void legendAct() {
 		
-		this.train(student);
+		/*Each movement of BenKenobi will call the train method*/
+		this.train(student,canAddForce);
 
 		if(isDead()) {
 			return;

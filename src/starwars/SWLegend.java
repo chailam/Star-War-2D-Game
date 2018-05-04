@@ -35,6 +35,8 @@ public abstract class SWLegend extends SWActor {
 	 * @param hitpoints
 	 * @param m
 	 * @param world
+	 * @param ability
+	 * @param value
 	 */
 	
 	protected SWLegend(Team team, int hitpoints, MessageRenderer m, SWWorld world,boolean ability, int value) {
@@ -61,12 +63,21 @@ public abstract class SWLegend extends SWActor {
 
 	protected abstract void legendAct();
 	
-	protected void train(SWActor a) {
+	/**
+	 * Train the <code>SWActor</code> to increase the force number <code>TheForce</code>.
+	 * <p>
+	 * All Legend can train the actors.
+	 * @author 	ChaiLam
+	 * @param 	a the <code>SWActor</code> needed to be trained
+	 * @param	value the force number of the actor added after get trained
+	 * 
+	 */
+	protected void train(SWActor a, int value) {
 		SWLocation thisLocation = this.world.getEntityManager().whereIs(this);
 		SWLocation studentLocation = this.world.getEntityManager().whereIs(a);
 		if (thisLocation == studentLocation) {
-			say("Lukeeeeeeee!");
-			say("SWActor hitpoints!!!"+a.getHitpoints());
+			a.force.addForceNumber(value);
+			say(a.getShortDescription() + " has increased his force number to " + a.force.getForceNumber());
 		}
 	}
 }

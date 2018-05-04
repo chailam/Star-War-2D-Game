@@ -38,6 +38,8 @@ public class Player extends SWActor {
 	 * @param hitpoints the hit points of this <code>Player</code> to get started with
 	 * @param m <code>MessageRenderer</code> to display messages.
 	 * @param world the <code>SWWorld</code> world to which this <code>Player</code> belongs to
+	 * @param	ability the ability of the <code>Player</code> to use <code>TheForce</code>.
+	 * @param	value the value of the force number of <code>Player</code> in <code>TheForce</code>.
 	 * 
 	 */
 	public Player(Team team, int hitpoints, MessageRenderer m, SWWorld world, boolean ability, int value) {
