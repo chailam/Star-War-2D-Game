@@ -10,6 +10,7 @@ import starwars.actions.Leave;
 import starwars.actions.Take;
 import starwars.entities.*;
 import starwars.entities.actors.*;
+import starwars.entities.actors.behaviors.Patrol;
 
 /**
  * Class representing a world in the Star Wars universe. 
@@ -28,7 +29,7 @@ public class SWWorld extends World {
 	 * <code>SWGrid</code> of this <code>SWWorld</code>
 	 */
 	private SWGrid myGrid;
-	
+	public Patrol droidPath;
 	/**The entity manager of the world which keeps track of <code>SWEntities</code> and their <code>SWLocation</code>s*/
 	private static final EntityManager<SWEntityInterface, SWLocation> entityManager = new EntityManager<SWEntityInterface, SWLocation>();
 	
@@ -184,9 +185,28 @@ public class SWWorld extends World {
 		
 		// A Tusken Raider
 		TuskenRaider tim = new TuskenRaider(10, "Tim", iface, this,false,-1);
-		tim.setSymbol("âˆ");
+		tim.setSymbol("ï¿½");
 		loc = myGrid.getLocationByCoordinates(4,3);
 		entityManager.setLocation(tim, loc);
+
+		//Droid
+		Droids droid = new Droids(100,"Droid001",iface,this,this);
+		SWActor droidOwner=droid.getOwner();
+		SWLocation ownerLocation=entityManager.whereIs(droidOwner);
+
+		loc=myGrid.getLocationByCoordinates(5,3);
+		SWLocation droidLocation=loc;
+		entityManager.setLocation(droid,loc);
+		if (droidLocation==ownerLocation){
+			return;
+		}
+		else{
+			while (droidLocation!=ownerLocation) {
+				Direction droidDir = droidPath.getNext();
+				moveEntity(droid, droidDir);
+
+			}
+		}
 
 	}
 
