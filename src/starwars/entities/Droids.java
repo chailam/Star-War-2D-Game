@@ -3,10 +3,7 @@ package starwars.entities;
 import edu.monash.fit2099.simulator.space.Direction;
 import edu.monash.fit2099.simulator.space.Location;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
-import starwars.SWActor;
-import starwars.SWLegend;
-import starwars.SWWorld;
-import starwars.Team;
+import starwars.*;
 import starwars.actions.Move;
 import starwars.entities.actors.behaviors.Patrol;
 
@@ -57,6 +54,7 @@ public class Droids extends SWActor {
         this.ownerLocation = ownerLocation;
     }
     /*if no owner or hitpoints negative*/
+    private SWGrid dGrid;
     @Override
     public void act(){
         if (droidHitpoints<=0 || owner==null){
@@ -70,6 +68,14 @@ public class Droids extends SWActor {
                 say(getShortDescription() + " moves " + droidDirection);
                 Move newMove = new Move(droidDirection, messageRenderer, world);
                 scheduler.schedule(newMove, this, 1);
+            }
+        }
+        for(int i=5;i<8;i++){
+            for(int j=4;j<7;j++){
+                Location dLoc=dGrid.getLocationByCoordinates(i,j);
+                if (droidLocation==dLoc){
+                    droidHitpoints-=1;
+                }
             }
         }
 
