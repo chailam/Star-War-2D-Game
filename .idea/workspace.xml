@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb4431d-8d38-4559-8685-581e325d1b03" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/starwars/SWWorld.java" afterPath="$PROJECT_DIR$/src/starwars/SWWorld.java" />
       <change beforePath="$PROJECT_DIR$/src/starwars/entities/Droids.java" afterPath="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SWWorld.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SWWorld.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="203" column="27" lean-forward="false" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
+            <state relative-caret-position="94">
+              <caret line="185" column="16" lean-forward="false" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -29,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="103">
-              <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+              <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -38,8 +37,8 @@
       <file leaf-file-name="Droids.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="78" column="41" lean-forward="false" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+            <state relative-caret-position="154">
+              <caret line="79" column="76" lean-forward="false" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1249#1250#0" expanded="true" />
@@ -48,8 +47,8 @@
                 <element signature="e#1362#1363#0" expanded="true" />
                 <element signature="e#1395#1396#0" expanded="true" />
                 <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1603#1604#0" expanded="true" />
-                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1510#1511#0" expanded="true" />
+                <element signature="e#1560#1561#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,17 +78,17 @@
         <entry file="file://$PROJECT_DIR$/src/starwars/SWLocation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="103">
-              <caret line="66" column="17" lean-forward="false" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+              <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TuskenRaider.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TuskenRaider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/TuskenRaider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="73" column="48" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="73" selection-end-column="48" />
+            <state relative-caret-position="86">
+              <caret line="69" column="92" lean-forward="true" selection-start-line="69" selection-start-column="92" selection-end-line="69" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -155,6 +154,10 @@
       <find>nei</find>
       <find>ran</find>
       <find>rando</find>
+      <find>geten</find>
+      <find>movee</find>
+      <find>move</find>
+      <find>tus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,8 +173,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/starwars/Droids.java" />
         <option value="$PROJECT_DIR$/src/edu/monash/fit2099/simulator/space/Location.java" />
-        <option value="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
         <option value="$PROJECT_DIR$/src/starwars/SWWorld.java" />
+        <option value="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
       </list>
     </option>
   </component>
@@ -391,6 +394,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="0" width="1346" height="710" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -401,7 +405,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34775373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34775373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -462,14 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/SWLegend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/monash/fit2099/simulator/space/Location.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
@@ -478,10 +474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
+    <entry file="file://$PROJECT_DIR$/src/starwars/SWLegend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+        <state relative-caret-position="-83">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -489,23 +485,23 @@
     <entry file="file://$PROJECT_DIR$/src/starwars/SWLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
-          <caret line="66" column="17" lean-forward="false" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/TuskenRaider.java">
+    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="73" column="48" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="73" selection-end-column="48" />
+        <state relative-caret-position="103">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="78" column="41" lean-forward="false" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+        <state relative-caret-position="154">
+          <caret line="79" column="76" lean-forward="false" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1249#1250#0" expanded="true" />
@@ -514,16 +510,24 @@
             <element signature="e#1362#1363#0" expanded="true" />
             <element signature="e#1395#1396#0" expanded="true" />
             <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1603#1604#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1560#1561#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="203" column="27" lean-forward="false" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
+        <state relative-caret-position="94">
+          <caret line="185" column="16" lean-forward="false" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/TuskenRaider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="69" column="92" lean-forward="true" selection-start-line="69" selection-start-column="92" selection-end-line="69" selection-end-column="92" />
           <folding />
         </state>
       </provider>

@@ -52,10 +52,7 @@ public class Droids extends SWActor {
         return owner;
     }
     /*if in badlands*/
-    public void droidDamage(){
-        //if (droidLocation){
-        droidHitpoints-=1;
-    }
+
 
 
     public void setDroidLocation(SWLocation droidLocation) {
@@ -75,11 +72,12 @@ public class Droids extends SWActor {
         if (droidLocation!=ownerLocation){
             while (droidLocation!=ownerLocation){
                 Direction droidDirection = droidPath.getNext();
-                say(getShortDescription() + " moves " + droidDirection);
+
                 /*if owner is a neighbour*/
                 if (world.canMove(this, droidDirection) && ownerLocation==droidLocation.getNeighbour(droidDirection)){
                     Move newMove = new Move(droidDirection, messageRenderer, world);
                     scheduler.schedule(newMove, this, 1);
+                    say(getShortDescription() + " moves " + droidDirection);
                 }
                 /*pick random direction*/
                 else{
