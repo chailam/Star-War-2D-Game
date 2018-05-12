@@ -201,7 +201,7 @@ public class SWWorld extends World {
 		if (droidLocation==ownerLocation){
 			return;
 		}
-		droid.setOwner(ben);
+		droid.setOwner(luke);
 
 	}
 

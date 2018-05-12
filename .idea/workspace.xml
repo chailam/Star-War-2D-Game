@@ -2,30 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb4431d-8d38-4559-8685-581e325d1b03" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/Grid$CompassBearing.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/Grid$CompassBearing.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/Grid.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/Grid.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/GridController.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/GridController.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/GridRenderer.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/gridworld/GridRenderer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Action.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Action.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/ActionInterface.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/ActionInterface.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Actor.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Actor.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Affordance.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Affordance.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Entity.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/Entity.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/EntityInterface.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/EntityInterface.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/EntityManager.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/matter/EntityManager.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/Direction.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/Direction.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/Location.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/Location.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/LocationContainer.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/LocationContainer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/LocationMaker.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/LocationMaker.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/World.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/space/World.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/time/Scheduler$Event.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/time/Scheduler$Event.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/time/Scheduler.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/time/Scheduler.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/userInterface/MapRenderer.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/userInterface/MapRenderer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/userInterface/MessageRenderer.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/userInterface/MessageRenderer.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/userInterface/SimulationController.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/userInterface/SimulationController.class" />
-      <change beforePath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/util/BiMultiMap.class" afterPath="$PROJECT_DIR$/bin/edu/monash/fit2099/simulator/util/BiMultiMap.class" />
       <change beforePath="$PROJECT_DIR$/src/starwars/SWWorld.java" afterPath="$PROJECT_DIR$/src/starwars/SWWorld.java" />
       <change beforePath="$PROJECT_DIR$/src/starwars/entities/Droids.java" afterPath="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
     </list>
@@ -39,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SWWorld.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SWWorld.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="218" column="49" lean-forward="false" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="49" />
+            <state relative-caret-position="131">
+              <caret line="203" column="27" lean-forward="false" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BenKenobi.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BenKenobi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+            <state relative-caret-position="103">
+              <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -62,18 +38,18 @@
       <file leaf-file-name="Droids.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="75" column="54" lean-forward="false" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+            <state relative-caret-position="107">
+              <caret line="78" column="41" lean-forward="false" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
-                <element signature="e#1214#1215#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-                <element signature="e#1532#1533#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
+                <element signature="e#1285#1286#0" expanded="true" />
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#1603#1604#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +78,18 @@
       <file leaf-file-name="SWLocation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/SWLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="103">
+              <caret line="66" column="17" lean-forward="false" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TuskenRaider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/TuskenRaider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="73" column="48" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="73" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -141,16 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SWActor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/starwars/SWActor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -176,6 +152,9 @@
       <find>entitymana</find>
       <find>set</find>
       <find>exit</find>
+      <find>nei</find>
+      <find>ran</find>
+      <find>rando</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,8 +170,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/starwars/Droids.java" />
         <option value="$PROJECT_DIR$/src/edu/monash/fit2099/simulator/space/Location.java" />
-        <option value="$PROJECT_DIR$/src/starwars/SWWorld.java" />
         <option value="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
+        <option value="$PROJECT_DIR$/src/starwars/SWWorld.java" />
       </list>
     </option>
   </component>
@@ -412,7 +391,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="0" width="1346" height="710" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -423,7 +401,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34775373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34775373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -484,14 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/monash/fit2099/simulator/space/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/SWLegend.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-83">
@@ -500,44 +470,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/monash/fit2099/simulator/space/Location.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="218" column="49" lean-forward="false" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="75" column="54" lean-forward="false" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/SWLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="571">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+        <state relative-caret-position="103">
+          <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/SWLocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="66" column="17" lean-forward="false" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/TuskenRaider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="73" column="48" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="73" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="78" column="41" lean-forward="false" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1603#1604#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="203" column="27" lean-forward="false" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="27" />
           <folding />
         </state>
       </provider>
