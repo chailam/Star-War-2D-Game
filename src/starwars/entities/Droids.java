@@ -69,33 +69,33 @@ public class Droids extends SWActor {
         }
         /*move until droid location equals owner location*/
         if (droidLocation!=ownerLocation){
-            while (droidLocation!=ownerLocation){
-                Direction droidDirection = droidPath.getNext();
+
+            Direction droidDirection = droidPath.getNext();
 
                 /*if owner is a neighbour*/
-                if (world.canMove(this, droidDirection) && ownerLocation==droidLocation.getNeighbour(droidDirection)){
-                    Move newMove = new Move(droidDirection, messageRenderer, world);
-                    scheduler.schedule(newMove, this, 1);
-                    say(getShortDescription() + " moves " + droidDirection);
-                }
+            if (world.canMove(this, droidDirection) && ownerLocation==droidLocation.getNeighbour(droidDirection)){
+                Move newMove = new Move(droidDirection, messageRenderer, world);
+                scheduler.schedule(newMove, this, 1);
+                say(getShortDescription() + " moves " + droidDirection);
+            }
                 /*pick random direction*/
-                else{
-                    ArrayList<Direction> droidAnyDirection = new ArrayList<Direction>();
+            else{
+                ArrayList<Direction> droidAnyDirection = new ArrayList<Direction>();
 
                     // build a list of available directions
-                    for (Grid.CompassBearing d : Grid.CompassBearing.values()) {
-                        if (SWWorld.getEntitymanager().seesExit(this, d)) {
-                            droidAnyDirection.add(d);
-                        }
+                for (Grid.CompassBearing d : Grid.CompassBearing.values()) {
+                    if (SWWorld.getEntitymanager().seesExit(this, d)) {
+                        droidAnyDirection.add(d);
                     }
-
-                    Direction heading = droidAnyDirection.get((int) (Math.floor(Math.random() * droidAnyDirection.size())));
-                    say(getShortDescription() + "is heading " + heading + " next.");
-                    Move myMove = new Move(heading, messageRenderer, world);
-
-                    scheduler.schedule(myMove, this, 1);
                 }
+
+                Direction heading = droidAnyDirection.get((int) (Math.floor(Math.random() * droidAnyDirection.size())));
+                say(getShortDescription() + "is heading " + heading + " next.");
+                Move myMove = new Move(heading, messageRenderer, world);
+
+                scheduler.schedule(myMove, this, 1);
             }
+
         }
         /*if droid is in badlands take damage*/
         if (droidLocation.getSymbol()=='b'){
