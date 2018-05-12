@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb4431d-8d38-4559-8685-581e325d1b03" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/starwars/SWWorld.java" afterPath="$PROJECT_DIR$/src/starwars/SWWorld.java" />
       <change beforePath="$PROJECT_DIR$/src/starwars/entities/Droids.java" afterPath="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -14,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SWWorld.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SWWorld.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="185" column="16" lean-forward="false" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="16" />
+            <state relative-caret-position="46">
+              <caret line="195" column="28" lean-forward="false" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -27,28 +28,28 @@
       <file leaf-file-name="BenKenobi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="476">
               <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Droids.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Droids.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="15" column="105" lean-forward="false" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1249#1250#0" expanded="true" />
-                <element signature="e#1285#1286#0" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
                 <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1560#1561#0" expanded="true" />
+                <element signature="e#1398#1399#0" expanded="true" />
+                <element signature="e#1465#1466#0" expanded="true" />
+                <element signature="e#1499#1500#0" expanded="true" />
+                <element signature="e#1556#1557#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#1723#1724#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,8 +156,8 @@
       <find>ran</find>
       <find>geten</find>
       <find>rando</find>
-      <find>movee</find>
       <find>tus</find>
+      <find>movee</find>
       <find>move</find>
     </findStrings>
   </component>
@@ -173,8 +174,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/starwars/Droids.java" />
         <option value="$PROJECT_DIR$/src/edu/monash/fit2099/simulator/space/Location.java" />
-        <option value="$PROJECT_DIR$/src/starwars/SWWorld.java" />
         <option value="$PROJECT_DIR$/src/starwars/entities/Droids.java" />
+        <option value="$PROJECT_DIR$/src/starwars/SWWorld.java" />
       </list>
     </option>
   </component>
@@ -466,14 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/TuskenRaider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -498,14 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="185" column="16" lean-forward="false" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/SWActor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -514,21 +499,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/entities/actors/BenKenobi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="73" column="46" lean-forward="false" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/entities/Droids.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="15" column="105" lean-forward="false" selection-start-line="15" selection-start-column="105" selection-end-line="15" selection-end-column="105" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
             <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1499#1500#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starwars/SWWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="195" column="28" lean-forward="false" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

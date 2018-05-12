@@ -190,10 +190,10 @@ public class SWWorld extends World {
 		entityManager.setLocation(tim, loc);
 
 		//Droid
-		Droids droid = new Droids(100,"Droid001",iface,patrolmoves,this,this);
+		Droids droid = new Droids(50,"Droid001",iface,patrolmoves,this,this);
 		SWActor droidOwner=droid.getOwner();
 		SWLocation ownerLocation=entityManager.whereIs(droidOwner);
-
+		/*Set droid location*/
 		loc=myGrid.getLocationByCoordinates(5,3);
 		droid.setDroidLocation(loc);
 		SWLocation droidLocation=loc;

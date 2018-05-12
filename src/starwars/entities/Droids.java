@@ -12,7 +12,9 @@ import starwars.entities.actors.behaviors.Patrol;
 
 import java.util.ArrayList;
 
-
+/*
+Droids have an owner that they can set and it moves to the owner if the owner is in the neighbouring area
+* */
 public class Droids extends SWActor {
     public Droids(int hitpoints, String name, MessageRenderer m, Direction [] moveOptions,SWWorld ownerWorld, SWWorld droidWorld){
         super(Team.NEUTRAL,50,m,droidWorld,false,0);
@@ -43,18 +45,15 @@ public class Droids extends SWActor {
     public SWLocation getOwnerLocation() {
         return ownerLocation;
     }
-
+    /*set droids owner*/
     public void setOwner(SWActor owner) {
         this.owner = owner;
     }
-
+    /*get droids owner*/
     public SWActor getOwner() {
         return owner;
     }
-    /*if in badlands*/
-
-
-
+    /*set droids location*/
     public void setDroidLocation(SWLocation droidLocation) {
         this.droidLocation = droidLocation;
     }
@@ -98,7 +97,7 @@ public class Droids extends SWActor {
                 }
             }
         }
-
+        /*if droid is in badlands take damage*/
         if (droidLocation.getSymbol()=='b'){
             this.takeDamage(1);
         }
