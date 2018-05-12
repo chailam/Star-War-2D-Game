@@ -153,7 +153,7 @@ public class SWWorld extends World {
 		// a canteen
 		loc = myGrid.getLocationByCoordinates(3,1);
 		SWEntity canteen = new Canteen(iface, 10,0);
-		canteen.setSymbol("©");
+		canteen.setSymbol("漏");
 		canteen.setHitpoints(500);
 		entityManager.setLocation(canteen, loc);
 		canteen.addAffordance(new Take(canteen, iface));
@@ -185,23 +185,26 @@ public class SWWorld extends World {
 		
 		// A Tusken Raider
 		TuskenRaider tim = new TuskenRaider(10, "Tim", iface, this,false,-1);
-		tim.setSymbol("�");
+		tim.setSymbol("T");
 		loc = myGrid.getLocationByCoordinates(4,3);
 		entityManager.setLocation(tim, loc);
 
-		//Droid
-		Droids droid = new Droids(50,"Droid001",iface,patrolmoves,this,this);
-		SWActor droidOwner=droid.getOwner();
-		SWLocation ownerLocation=entityManager.whereIs(droidOwner);
+		//Droid 1
+		Droids droid1 = new Droids(50,"Droid001",iface,this);
+		droid1.setSymbol("D1");
 		/*Set droid location*/
-		loc=myGrid.getLocationByCoordinates(5,3);
-		droid.setDroidLocation(loc);
-		SWLocation droidLocation=loc;
-		entityManager.setLocation(droid,loc);
-		if (droidLocation==ownerLocation){
-			return;
-		}
-		droid.setOwner(luke);
+		loc = myGrid.getLocationByCoordinates(5,3); 
+		entityManager.setLocation(droid1,loc);
+		
+		droid1.setOwner(luke);
+		
+		//Droid 2
+		Droids droid2 = new Droids(50,"Droid002",iface,this);
+		droid2.setSymbol("D2");
+		/*Set droid location*/
+		loc = myGrid.getLocationByCoordinates(7,6); 
+		entityManager.setLocation(droid2,loc);
+				
 
 	}
 
