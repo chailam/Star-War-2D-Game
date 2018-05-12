@@ -190,23 +190,18 @@ public class SWWorld extends World {
 		entityManager.setLocation(tim, loc);
 
 		//Droid
-		Droids droid = new Droids(100,"Droid001",iface,this,this);
+		Droids droid = new Droids(100,"Droid001",iface,patrolmoves,this,this);
 		SWActor droidOwner=droid.getOwner();
 		SWLocation ownerLocation=entityManager.whereIs(droidOwner);
 
 		loc=myGrid.getLocationByCoordinates(5,3);
+		droid.setDroidLocation(loc);
 		SWLocation droidLocation=loc;
 		entityManager.setLocation(droid,loc);
 		if (droidLocation==ownerLocation){
 			return;
 		}
-		else{
-			while (droidLocation!=ownerLocation) {
-				Direction droidDir = droidPath.getNext();
-				moveEntity(droid, droidDir);
-
-			}
-		}
+		droid.setOwner(ben);
 
 	}
 

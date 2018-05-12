@@ -4,39 +4,48 @@ import edu.monash.fit2099.simulator.space.Direction;
 import edu.monash.fit2099.simulator.space.Location;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
 import starwars.*;
+import starwars.actions.Leave;
 import starwars.actions.Move;
+import starwars.actions.Take;
 import starwars.entities.actors.behaviors.Patrol;
 
 
 public class Droids extends SWActor {
-    public Droids(int hitpoints, String name, MessageRenderer m, SWWorld ownerWorld, SWWorld droidWorld){
+    public Droids(int hitpoints, String name, MessageRenderer m, Direction [] moveOptions,SWWorld ownerWorld, SWWorld droidWorld){
         super(Team.NEUTRAL,50,m,droidWorld,false,0);
         int droidHitpoints=hitpoints;
+        this.addAffordance(new Take(this,m));
+        this.addAffordance(new Leave(this,m));
+        droidPath=new Patrol(moveOptions);
+        this.setShortDescription("Droid" +
+                "");
+
     }
-    private SWLegend owner;
+
+
+    private SWActor owner;
     private SWWorld ownerWorld;
-    private Location ownerLocation=ownerWorld.find(owner);
+    private SWLocation ownerLocation;
     private SWWorld droidWorld;
-    private Location droidLocation=droidWorld.find(this);
-    int droidHitpoints=this.getHitpoints();
-    private Patrol droidPath;
-    public void moveDroid(){
+    private SWLocation droidLocation;
+    int droidHitpoints=50;
+    public Patrol droidPath;
 
-    }
 
-    public Location getDroidLocation() {
+    public SWLocation getDroidLocation() {
+
         return droidLocation;
     }
 
-    public Location getOwnerLocation() {
+    public SWLocation getOwnerLocation() {
         return ownerLocation;
     }
 
-    public void setOwner(SWLegend owner) {
+    public void setOwner(SWActor owner) {
         this.owner = owner;
     }
 
-    public SWLegend getOwner() {
+    public SWActor getOwner() {
         return owner;
     }
     /*if in badlands*/
@@ -46,15 +55,13 @@ public class Droids extends SWActor {
     }
 
 
-    public void setDroidLocation(Location droidLocation) {
+    public void setDroidLocation(SWLocation droidLocation) {
         this.droidLocation = droidLocation;
     }
 
-    public void setOwnerLocation(Location ownerLocation) {
-        this.ownerLocation = ownerLocation;
-    }
+
     /*if no owner or hitpoints negative*/
-    private SWGrid dGrid;
+
     @Override
     public void act(){
         if (droidHitpoints<=0 || owner==null){
@@ -66,19 +73,15 @@ public class Droids extends SWActor {
             while (droidLocation!=ownerLocation){
                 Direction droidDirection = droidPath.getNext();
                 say(getShortDescription() + " moves " + droidDirection);
+                if (world.canMove(this, droidDirection)){
                 Move newMove = new Move(droidDirection, messageRenderer, world);
-                scheduler.schedule(newMove, this, 1);
-            }
-        }
-        for(int i=5;i<8;i++){
-            for(int j=4;j<7;j++){
-                Location dLoc=dGrid.getLocationByCoordinates(i,j);
-                if (droidLocation==dLoc){
-                    droidHitpoints-=1;
-                }
+                scheduler.schedule(newMove, this, 1);}
             }
         }
 
+        if (droidLocation.getSymbol()=='b'){
+            droidHitpoints-=1;
+        }
     }
 
 }
