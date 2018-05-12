@@ -100,7 +100,7 @@ public class Droids extends SWActor {
         }
 
         if (droidLocation.getSymbol()=='b'){
-            droidHitpoints-=1;
+            this.takeDamage(1);
         }
 
     }
