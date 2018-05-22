@@ -190,6 +190,22 @@ public class SWWorld extends World {
 		tim.setSymbol("T");
 		loc = myGrid.getLocationByCoordinates(4,3);
 		entityManager.setLocation(tim, loc);
+		//Grenade
+		Grenade grenade1=new Grenade(iface);
+		loc=myGrid.getLocationByCoordinates(2,7);
+		entityManager.setLocation(grenade1,loc);
+
+		Grenade grenade2=new Grenade(iface);
+		loc=myGrid.getLocationByCoordinates(10,4);
+		entityManager.setLocation(grenade2,loc);
+
+		Grenade grenade3=new Grenade(iface);
+		loc=myGrid.getLocationByCoordinates(11,2);
+		entityManager.setLocation(grenade3,loc);
+
+		Grenade grenade4=new Grenade(iface);
+		loc=myGrid.getLocationByCoordinates(6,3);
+		entityManager.setLocation(grenade4,loc);
 
 		//Droid 1
 		Droids droid1 = new Droids(50,"Droid001",iface,this);

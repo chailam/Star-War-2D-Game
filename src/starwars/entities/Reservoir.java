@@ -12,7 +12,7 @@ import starwars.actions.Dip;
  * 
  * @author 	ram
  * @see 	{@link starwars.entities.Canteen}
- * @see {@link starwars.entites.Fillable}
+ * @see {@link starwars.entities.Fillable}
  * @see {@link starwars.actions.Fill} 
  */
 public class Reservoir extends SWEntity {
@@ -34,12 +34,26 @@ public class Reservoir extends SWEntity {
 		super(m);
 		SWAffordance dip = new Dip(this, m);
 		this.addAffordance(dip);	
-		
+		this.hitpoints=40;
 		this.setLongDescription("a water reservoir.");
 		this.setShortDescription("a water reservoir, full of cool, clear, refreshing water");
 		this.setSymbol("W");
 	}
+	@Override
+	public void takeDamage(int damage){
+		super.takeDamage(damage);
+		if(this.hitpoints<20){
+			this.shortDescription="A damaged water reservoir.";
+			this.longDescription="A damaged water reservoir, leaking slowly";
+			this.setSymbol("V");
+		}
+		else if (this.hitpoints<=0){
+			this.shortDescription="The wreckage of a water reservoir.";
+			this.longDescription="The wreckage of a water reservoir, surrounded by slightly damp soil.";
+			this.setSymbol("X");
+		}
 
+	}
 	@Override 
 	public String getShortDescription() {
 		return shortDescription;
