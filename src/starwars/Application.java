@@ -20,7 +20,7 @@ import starwars.swinterfaces.SWGridController;
 public class Application {
 	public static void main(String args[]) {
 		
-		SWWorld world = new SWWorld();
+		SWWorld world = new SWWorld(10,10);
 		
 		//Grid controller controls the data and commands between the UI and the model
 		SWGridController uiController = new SWGridController(world);
@@ -37,9 +37,23 @@ public class Application {
 			theScheduler.tick();
 		}
 		
+//		SWWorld sss = new SandcrawlerWorld(); 
+//		SWGridController uiController = new SWGridController(sss);
+//		
+//		Scheduler theScheduler = new Scheduler(1, sss);
+//		SWActor.setScheduler(theScheduler);
+//		
+//		// set up the world
+//		sss.initializeWorld(uiController);
+//	
+//		// kick off the scheduler
+//		
+//			uiController.render();
+//			theScheduler.tick();
 		
 	}
+}
 	
 	
 
-}
+

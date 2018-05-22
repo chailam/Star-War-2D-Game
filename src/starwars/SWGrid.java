@@ -22,9 +22,12 @@ public class SWGrid extends Grid<SWLocation> {
 	 * Will create a 10 by 10 grid with 100 <code>SWLocation</code>s
 	 * 
 	 * @param factory the maker of the <code>SWLocation</code>s
+	 * @param x width of the grid
+	 * @param y height of the grid
+	 * 
 	 */
-	public SWGrid(LocationMaker<SWLocation> factory) {
-		super(10,10,factory);
+	public SWGrid(LocationMaker<SWLocation> factory,int x, int y) {
+		super(x,y,factory);
 	}
 	
 

@@ -36,12 +36,14 @@ public class SWWorld extends World {
 	/**
 	 * Constructor of <code>SWWorld</code>. This will initialize the <code>SWLocationMaker</code>
 	 * and the grid.
+	 * @param x width of the grid
+	 * @param y height of the grid
+	 * 
 	 */
-	public SWWorld() {
+	public SWWorld(int x,int y) {
 		SWLocation.SWLocationMaker factory = SWLocation.getMaker();
-		myGrid = new SWGrid(factory);
-		space = myGrid;
-		
+		myGrid = new SWGrid(factory,x,y);
+		space = myGrid;		
 	}
 
 	/** 
