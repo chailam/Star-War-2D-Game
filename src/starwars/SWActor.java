@@ -308,7 +308,9 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 		/* Actually, that's not the case: all non-movement actions are transferred to newActions before the movements are transferred. --ram */
 	}
 
-
+	public SWLocation getActorLocation(){
+		return this.world.getEntityManager().whereIs(this);
+	}
 	
 	
 	
