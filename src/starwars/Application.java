@@ -32,11 +32,11 @@ public class Application {
 		world.initializeWorld(uiController);
 	
 		// kick off the scheduler
-//		while(true) {
+		while(true) {
 			uiController.render();
 			theScheduler.tick();
-//		}
-		
+		}
+		/*
 		SWWorld sss = new SandcrawlerWorld(); 
 		SWGridController uiController1 = new SWGridController(sss);
 		
@@ -52,7 +52,7 @@ public class Application {
 			uiController1.render();
 			theScheduler1.tick();
 //		}
-//	}
+//	}	*/
 	}
 }
 	
