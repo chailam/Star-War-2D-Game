@@ -1,7 +1,8 @@
 package starwars;
 
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
-import starwars.entities.actors.Player;
+import starwars.entities.Door;
+
 
 
 
@@ -18,6 +19,12 @@ public class SandcrawlerWorld extends SWWorld{
 		super(4,4);	
 	}
 	
+	/**
+	 * Set up the world, setting descriptions for locations and placing items on the grid.
+	 * 
+	 * @author 	chailam
+	 * @param 	iface a MessageRenderer to be passed onto newly-created entities
+	 */
 	@Override
 	public void initializeWorld(MessageRenderer iface) {
 		SWLocation loc;
@@ -27,25 +34,37 @@ public class SandcrawlerWorld extends SWWorld{
 				loc = getGrid().getLocationByCoordinates(col, row);
 				loc.setLongDescription("SWWorld (" + col + ", " + row + ")");
 				loc.setShortDescription("SWWorld (" + col + ", " + row + ")");
-				if (row == exitX && col == exitY) {
-					loc.setSymbol('E');  //Exit	
-				}
-				else {
 				loc.setSymbol('.');				
 				}
 			}
-		}
-		loc =  getGrid().getLocationByCoordinates(0,0);
-		Player luke = new Player(Team.GOOD, 100, iface, this,true,50);////
-		luke.setShortDescription("Luke");
-		getEntitymanager().setLocation(luke, loc);
-		luke.resetMoveCommands(loc);
+		
+		//Set the door
+		loc =  getGrid().getLocationByCoordinates(exitX,exitY);
+		Door door = new Door(iface);
+		door.setSymbol("це");
+		getEntitymanager().setLocation(door, loc);
 	}
 	
+	/**
+	 * Accessor for the exitX.
+	 * <p>
+	 * Will return the exit coordinate X
+	 * 
+	 * @author chailam
+	 * @return exitX
+	 */
 	public int getExitX() {
 		return exitX;
 	}
 	
+	/**
+	 * Accessor for the exitY.
+	 * <p>
+	 * Will return the exit coordinate Y
+	 * 
+	 * @author chailam
+	 * @return exitY
+	 */
 	public int getExitY() {
 		return exitY;
 	}

@@ -24,6 +24,7 @@ public class Application {
 		
 		//Grid controller controls the data and commands between the UI and the model
 		SWGridController uiController = new SWGridController(world);
+		world.setController(uiController);
 		
 		Scheduler theScheduler = new Scheduler(1, world);
 		SWActor.setScheduler(theScheduler);
@@ -32,29 +33,17 @@ public class Application {
 		world.initializeWorld(uiController);
 	
 		// kick off the scheduler
-//		while(true) {
+		while(true) {
 			uiController.render();
 			theScheduler.tick();
-//		}
-		
-		SWWorld sss = new SandcrawlerWorld(); 
-		SWGridController uiController1 = new SWGridController(sss);
-		
-		Scheduler theScheduler1 = new Scheduler(1, sss);
-		SWActor.setScheduler(theScheduler1);
-		
-		// set up the world
-		sss.initializeWorld(uiController1);
-	
-		// kick off the scheduler
-		
-//		while(true) {
-			uiController1.render();
-			theScheduler1.tick();
-//		}
-//	}
+		}
 	}
 }
+
+/*
+ * uiController.changeWorld(world);
+*	uiController.render();
+ */
 	
 	
 

@@ -44,7 +44,7 @@ public class SWGridController implements GridController {
 		this.grid = world.getGrid();
 		
 		//change the user interface to be used here in the constructor
-		SWGridController.ui = new SWGridTextInterface(this.grid); //use a Text Interface to interact
+		SWGridController.ui = new SWGridTextInterface(this.grid,true); //use a Text Interface to interact
 		//this.ui = new SWGridBasicGUI(this.grid); //Use a Basic GUI to interact
 		//this.ui = new SWGridGUI(this.grid); //Use a GUI with better graphics to interact
 	}
@@ -89,6 +89,19 @@ public class SWGridController implements GridController {
 		
 		//cast and return selection
 		return (SWActionInterface)selectedAction;
+	}
+	
+	/**
+	 * Changing the grid of the for the <code>SWGridController</code>
+	 * <p>
+	 * Each time changing it will call a new <code>SWGridTextInterface</code>
+	 * 
+	 * @author chailam
+	 * @param theworld the grid of the world to be changed
+	 */
+	public void changeWorld(SWWorld theworld) {
+		this.grid = theworld.getGrid();
+		SWGridController.ui = new SWGridTextInterface(this.grid,false); 
 	}
 	
 }

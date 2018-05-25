@@ -41,13 +41,14 @@ public class SWGridTextInterface implements GridRenderer {
 	 * show the text banner with the first map render.
 	 * 
 	 * @param 	grid the grid of the world
+	 * @param showbanner to determine whether the banner should be shown when initializing the text interface
 	 * @pre 	grid should not be null 
 	 */
-	public SWGridTextInterface(SWGrid grid) {
+	public SWGridTextInterface(SWGrid grid,boolean showbanner) {
 		SWGridTextInterface.grid = grid;
 		instream = new Scanner(System.in);
 		//set the show banner to true so that the banner would be displayed on the first map render
-		showBanner = true;
+		showBanner = showbanner;
 	}
 	
 	

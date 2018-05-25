@@ -9,3 +9,12 @@ All the design and coding for Leave Affordance, Force ability, Lightsabres and B
 
 Vinitha:
 All the design and coding for Droids.
+
+
+FIT2099 Assignment 3
+
+Loi Chai Lam:
+All the design and coding for Jawa Sandcrawler.
+
+Vinitha:
+All the design and coding for Make Reservoirs damageable and Grenade.

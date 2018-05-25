@@ -313,5 +313,17 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	}
 	
 	
+	/**
+	 * Getter of the insideWorld.
+	 * <p>
+	 * Set to be used by the <code>SWActor</code> which has a inside world, like <code>Sandcrawler</code>
+	 * 
+	 * @author chailam
+	 * @return the world
+	 */
+	public SWWorld getInsideWorld() {
+		return this.world;
+	}
+	
 	
 }

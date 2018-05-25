@@ -11,6 +11,7 @@ import starwars.actions.Take;
 import starwars.entities.*;
 import starwars.entities.actors.*;
 import starwars.entities.actors.behaviors.Patrol;
+import starwars.swinterfaces.SWGridController;
 
 /**
  * Class representing a world in the Star Wars universe. 
@@ -32,6 +33,7 @@ public class SWWorld extends World {
 	public Patrol droidPath;
 	/**The entity manager of the world which keeps track of <code>SWEntities</code> and their <code>SWLocation</code>s*/
 	private static final EntityManager<SWEntityInterface, SWLocation> entityManager = new EntityManager<SWEntityInterface, SWLocation>();
+	private SWGridController uiController; //pass the uiController into SWWorld
 	
 	/**
 	 * Constructor of <code>SWWorld</code>. This will initialize the <code>SWLocationMaker</code>
@@ -125,6 +127,12 @@ public class SWWorld extends World {
 		
 		ben.setStudent(luke);
 		
+		//Sandcrawler
+		Sandcrawler sandcrawler = new Sandcrawler(Team.GOOD,1000,iface,this,patrolmoves,false,0);
+		sandcrawler.setSymbol("S");
+		loc = myGrid.getLocationByCoordinates(4,  9);
+		entityManager.setLocation(sandcrawler, loc);
+		
 		
 		// Beggar's Canyon 
 		for (int col = 3; col < 8; col++) {
@@ -190,6 +198,7 @@ public class SWWorld extends World {
 		tim.setSymbol("T");
 		loc = myGrid.getLocationByCoordinates(4,3);
 		entityManager.setLocation(tim, loc);
+		
 		//Grenade
 		Grenade grenade1=new Grenade(iface);
 		loc=myGrid.getLocationByCoordinates(2,7);
@@ -224,7 +233,6 @@ public class SWWorld extends World {
 		/*Set droid location*/
 		loc = myGrid.getLocationByCoordinates(7,6); 
 		entityManager.setLocation(droid2,loc);
-				
 
 	}
 
@@ -305,5 +313,27 @@ public class SWWorld extends World {
 	 */
 	public static EntityManager<SWEntityInterface, SWLocation> getEntitymanager() {
 		return entityManager;
+	}
+	
+	
+	/**
+	 * Setter of the uiController.
+	 * 
+	 * @author chailam
+	 * @param theController the controller to be set to uiController
+	 */
+	public void setController(SWGridController theController) {
+		
+		uiController = theController;
+	}
+	
+	/**
+	 * Getter of the uiController.
+	 * 
+	 * @author chailam
+	 * @return uiController the uiController of the application
+	 */
+	public SWGridController getController() {
+		return uiController;
 	}
 }
