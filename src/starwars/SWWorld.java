@@ -196,11 +196,19 @@ public class SWWorld extends World {
 		entityManager.setLocation(grenade1,loc);
 
 		Grenade grenade2=new Grenade(iface);
+<<<<<<< HEAD
 		loc=myGrid.getLocationByCoordinates(9,4);
 		entityManager.setLocation(grenade2,loc);
 
 		Grenade grenade3=new Grenade(iface);
 		loc=myGrid.getLocationByCoordinates(6,2);
+=======
+		loc=myGrid.getLocationByCoordinates(1,4);
+		entityManager.setLocation(grenade2,loc);
+
+		Grenade grenade3=new Grenade(iface);
+		loc=myGrid.getLocationByCoordinates(2,2);
+>>>>>>> 1ee7445b40021d2fcf6eca6fe3cee1222ec8f0a5
 		entityManager.setLocation(grenade3,loc);
 
 		Grenade grenade4=new Grenade(iface);

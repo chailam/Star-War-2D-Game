@@ -25,4 +25,9 @@ public class Grenade extends SWEntity {
         this.longDescription="Grenade has been used up and disappeared";
         this.capabilities.remove(Capability.WEAPON);
     }
+
+    @Override
+    public String getSymbol() {
+        return "G!";
+    }
 }
