@@ -101,13 +101,13 @@ public class Sandcrawler extends SWActor {
 				flag = true;
 				ArrayList<Integer> location = randomLocation();
 				
+				SWWorld.getEntitymanager().remove(entity);	
 				int row = location.get(0);
 				int col = location.get(1);
 				
 				SWLocation droidLoc = theWorld.getGrid().getLocationByCoordinates(row, col);
-				SWWorld.getEntitymanager().setLocation(entity, droidLoc);
 				
-				SWWorld.getEntitymanager().remove(entity);			
+				SWWorld.getEntitymanager().setLocation(entity, droidLoc);
 			}
 		}
 		return flag;
@@ -116,8 +116,8 @@ public class Sandcrawler extends SWActor {
 	
 	private ArrayList<Integer> randomLocation() {
 		ArrayList<Integer> location = new ArrayList<Integer>(); 
-		int row = (int)Math.round(Math.random()*theWorld.height());
-		int col = (int)Math.round(Math.random()*theWorld.width());
+		int row = (int)(Math.floor(Math.random() * theWorld.height()));
+		int col = (int)(Math.floor(Math.random() * theWorld.width()));
 		location.add(row);
 		location.add(col);
 		return location;

@@ -218,21 +218,23 @@ public class SWWorld extends World {
 		loc=myGrid.getLocationByCoordinates(6,3);
 		entityManager.setLocation(grenade4,loc);
 
-		//Droid 1
+		//Droid 
 		Droids droid1 = new Droids(50,"Droid001",iface,this);
-		droid1.setSymbol("D1");
 		/*Set droid location*/
 		loc = myGrid.getLocationByCoordinates(5,3); 
 		entityManager.setLocation(droid1,loc);
 		
 		droid1.setOwner(luke);
 		
-		//Droid 2
 		Droids droid2 = new Droids(50,"Droid002",iface,this);
-		droid2.setSymbol("D2");
 		/*Set droid location*/
 		loc = myGrid.getLocationByCoordinates(7,6); 
 		entityManager.setLocation(droid2,loc);
+		
+		Droids droid3 = new Droids(50,"Droid003",iface,this);
+		/*Set droid location*/
+		loc = myGrid.getLocationByCoordinates(6,9); 
+		entityManager.setLocation(droid3,loc);
 
 	}
 

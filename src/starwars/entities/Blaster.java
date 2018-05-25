@@ -61,7 +61,7 @@ public class Blaster extends SWEntity {
 	 * @see 	{@link starwars.SWEntityInterface#getSymbol()}
 	 */
 	public String getSymbol() {
-		return "b"; 
+		return "Bl"; 
 	}
 
 	/**

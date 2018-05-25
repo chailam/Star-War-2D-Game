@@ -79,6 +79,16 @@ public class Droids extends SWActor {
         return owner;
     }
 
+	/**
+	 * A symbol that is used to represent the Blaster on a text based user interface
+	 * 
+	 * @return 	Single Character string "b"
+	 * @see 	{@link starwars.SWEntityInterface#getSymbol()}
+	 */
+	public String getSymbol() {
+		return "D"; 
+	}
+	
     /**
      * Method to find the <code>Direction</code> if the owner is in neighbouring <code>SWLocation</code>.
      */

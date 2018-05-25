@@ -50,12 +50,12 @@ public class Exit extends SWAffordance{
 		if (canDo(a)) {
 			SWEntityInterface theTarget = (SWEntityInterface) target;
 			SWWorld originalWorld = a.getWorld();
-			SWLocation oriLoc =  originalWorld.getEntityManager().whereIs(theTarget);
+			//SWLocation oriLoc =  originalWorld.getEntityManager().whereIs(theTarget);
 			SWAction.getEntitymanager().remove(a);
 			
 			
-			//SWLocation playerLoc = originalWorld.getGrid().getLocationByCoordinates(0, 0);
-			SWAction.getEntitymanager().setLocation(a, oriLoc);
+			SWLocation playerLoc = originalWorld.getGrid().getLocationByCoordinates(0, 0);
+			SWAction.getEntitymanager().setLocation(a, playerLoc);
 			originalWorld.getController().changeWorld(originalWorld);
 		}
 	}

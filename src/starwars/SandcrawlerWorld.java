@@ -42,7 +42,7 @@ public class SandcrawlerWorld extends SWWorld{
 		loc =  getGrid().getLocationByCoordinates(exitX,exitY);
 		Door door = new Door(iface);
 		door.setSymbol("це");
-		getEntitymanager().setLocation(door, loc);
+		SWWorld.getEntitymanager().setLocation(door, loc);
 	}
 	
 	/**
