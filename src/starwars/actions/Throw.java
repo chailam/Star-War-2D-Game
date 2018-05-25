@@ -60,11 +60,11 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
     @Override
     public String getDescription() {
-        return null;
+        return "throw"+target.getShortDescription();
     }
 
     @Override
     public boolean canDo(SWActor a) {
-        return false;
+        return a.getItemCarried()!=null;
     }
 }
