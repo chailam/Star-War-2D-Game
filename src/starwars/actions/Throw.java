@@ -29,7 +29,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
         }
         SWEntity itemCarried=(SWEntity) a.getItemCarried();
         /*Actor can throw a distance of 5 steps*/
-        if(itemCarried instanceof Grenade && targetIsActor){
+        /*if(itemCarried instanceof Grenade && targetIsActor){
             if(a.getActorLocation().getNeighbour(directions.get(5))==targetActor.getActorLocation()){
                 targetActor.takeDamage(20);
                 itemCarried.takeDamage(20);
@@ -43,7 +43,19 @@ public class Throw extends SWAffordance implements SWActionInterface{
                 itemCarried.takeDamage(5);
             }
             a.say(a.getShortDescription()+" threw a grenade on "+targetActor.getShortDescription());
+        }*/
+        if(SWAction.getEntitymanager().whereIs(target)==SWAction.getEntitymanager().whereIs(a)){
+            target.takeDamage(20);
+            itemCarried.removeAffordance(this);
         }
+        else if(SWAction.getEntitymanager().whereIs(target)==SWAction.getEntitymanager().whereIs(a).getNeighbour(directions.get(1))){
+            target.takeDamage(10);
+        }
+        else if(SWAction.getEntitymanager().whereIs(target)==SWAction.getEntitymanager().whereIs(a).getNeighbour(directions.get(2))){
+            target.takeDamage(5);
+        }
+        a.say(a.getShortDescription()+" threw a grenade on "+target.getShortDescription());
+
     }
 
     @Override

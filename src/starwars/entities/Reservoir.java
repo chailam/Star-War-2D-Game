@@ -62,4 +62,9 @@ public class Reservoir extends SWEntity {
 	public String getLongDescription() {
 		return longDescription;
 	}
+
+	@Override
+	public String getSymbol() {
+		return "R";
+	}
 }
