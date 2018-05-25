@@ -40,10 +40,6 @@ public class Application {
 	}
 }
 
-/*
- * uiController.changeWorld(world);
-*	uiController.render();
- */
 	
 	
 
