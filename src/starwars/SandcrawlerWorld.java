@@ -1,6 +1,7 @@
 package starwars;
 
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
+import starwars.entities.actors.Player;
 
 
 
@@ -34,6 +35,11 @@ public class SandcrawlerWorld extends SWWorld{
 				}
 			}
 		}
+		loc =  getGrid().getLocationByCoordinates(0,0);
+		Player luke = new Player(Team.GOOD, 100, iface, this,true,50);////
+		luke.setShortDescription("Luke");
+		getEntitymanager().setLocation(luke, loc);
+		luke.resetMoveCommands(loc);
 	}
 	
 	public int getExitX() {
