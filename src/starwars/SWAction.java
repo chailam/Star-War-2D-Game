@@ -3,6 +3,7 @@ package starwars;
 import edu.monash.fit2099.simulator.matter.Action;
 import edu.monash.fit2099.simulator.matter.Actor;
 import edu.monash.fit2099.simulator.matter.EntityManager;
+import edu.monash.fit2099.simulator.space.Location;
 import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
 
 /**
@@ -88,6 +89,7 @@ public abstract class SWAction extends Action implements SWActionInterface {
 	public static EntityManager<SWEntityInterface, SWLocation> getEntitymanager() {
 		return entityManager;
 	}
+
 
 
 }

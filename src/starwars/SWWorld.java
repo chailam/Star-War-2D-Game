@@ -207,6 +207,7 @@ public class SWWorld extends World {
 		Grenade grenade2=new Grenade(iface);
 
 		loc=myGrid.getLocationByCoordinates(9,4);
+		loc=myGrid.getLocationByCoordinates(6,9);
 		entityManager.setLocation(grenade2,loc);
 
 		Grenade grenade3=new Grenade(iface);
