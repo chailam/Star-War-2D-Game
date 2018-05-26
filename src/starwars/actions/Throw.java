@@ -85,7 +85,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -97,7 +97,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -108,7 +108,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -119,7 +119,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -130,7 +130,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -141,7 +141,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -152,7 +152,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -163,7 +163,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(10);
+                                nearEntities.get(j).takeDamage(5);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 2 steps away by " + a.getShortDescription());
                             }
                         }
@@ -175,7 +175,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -187,7 +187,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -198,7 +198,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -209,7 +209,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -220,7 +220,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -231,7 +231,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -242,7 +242,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
@@ -253,7 +253,7 @@ public class Throw extends SWAffordance implements SWActionInterface{
 
                         for (int j = 0; j < nearEntities.size(); j++) {
                             if(nearEntities.get(j)!=a) {
-                                nearEntities.get(j).takeDamage(5);
+                                nearEntities.get(j).takeDamage(10);
                                 a.say(nearEntities.get(j).getShortDescription() + " was attacked by a grenade 1 steps away by " + a.getShortDescription());
                             }
                         }
