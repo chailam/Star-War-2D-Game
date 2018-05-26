@@ -5,9 +5,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bb4431d-8d38-4559-8685-581e325d1b03" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/starwars/actions/Throw.java" afterPath="$PROJECT_DIR$/src/starwars/actions/Throw.java" />
-    </list>
+    <list default="true" id="6bb4431d-8d38-4559-8685-581e325d1b03" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,8 +64,8 @@
       <file leaf-file-name="Throw.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/starwars/actions/Throw.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1293">
-              <caret line="87" column="64" lean-forward="false" selection-start-line="87" selection-start-column="64" selection-end-line="87" selection-end-column="64" />
+            <state relative-caret-position="2804">
+              <caret line="175" column="71" lean-forward="true" selection-start-line="175" selection-start-column="71" selection-end-line="175" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#15296#15297#0" expanded="true" />
@@ -894,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/starwars/actions/Throw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1293">
-          <caret line="87" column="64" lean-forward="false" selection-start-line="87" selection-start-column="64" selection-end-line="87" selection-end-column="64" />
+        <state relative-caret-position="2804">
+          <caret line="175" column="71" lean-forward="true" selection-start-line="175" selection-start-column="71" selection-end-line="175" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#15296#15297#0" expanded="true" />
