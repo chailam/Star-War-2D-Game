@@ -39,7 +39,7 @@ public class Grenade extends SWEntity {
         this.longDescription="A grenade!!!! BOOM DEAD!";
         this.shortDescription="A Grenade";
         this.addAffordance(new Take(this,m));
-        //this.addAffordance(new Leave(this,m));
+        this.addAffordance(new Leave(this,m));
         this.addAffordance(new Throw(this,m));
         this.capabilities.add(Capability.WEAPON);
         this.hitpoints=200;
