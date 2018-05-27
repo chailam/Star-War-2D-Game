@@ -50,6 +50,8 @@ public class Enter extends SWAffordance{
 		if (canDo(a)) {
 			SWActor theTarget = (SWActor)target;
 			
+			a.setSandcrawler(theTarget);  //Set the Sandcrawler to the actor
+			
 			SWWorld targetWorld = theTarget.getWorld();
 			SWWorld targetInsideWorld = theTarget.getInsideWorld();
 			
