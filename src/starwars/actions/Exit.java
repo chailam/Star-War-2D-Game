@@ -48,14 +48,11 @@ public class Exit extends SWAffordance{
 	@Override
 	public void act(SWActor a) {
 		if (canDo(a)) {
-			SWEntityInterface theTarget = (SWEntityInterface) target;
 			SWWorld originalWorld = a.getWorld();
-			//SWLocation oriLoc =  originalWorld.getEntityManager().whereIs(theTarget);
+			SWLocation oriLoc =  originalWorld.getEntityManager().whereIs(a.getSandcrawler());
 			SWAction.getEntitymanager().remove(a);
 			
-			
-			SWLocation playerLoc = originalWorld.getGrid().getLocationByCoordinates(0, 0);
-			SWAction.getEntitymanager().setLocation(a, playerLoc);
+			SWAction.getEntitymanager().setLocation(a, oriLoc);
 			originalWorld.getController().changeWorld(originalWorld);
 		}
 	}

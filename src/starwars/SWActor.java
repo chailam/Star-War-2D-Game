@@ -56,6 +56,9 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	/**The Force ability of the <code>SWActor</code>*/
 	protected TheForce force;
 	
+	/**The <code>Sandcrawler</code> entered by the actor <code>SWActor</code>*/
+	private SWActor s;
+	
 	/**
 	 * Constructor for the <code>SWActor</code>.
 	 * <p>
@@ -323,6 +326,28 @@ public abstract class SWActor extends Actor<SWActionInterface> implements SWEnti
 	 */
 	public SWWorld getInsideWorld() {
 		return this.world;
+	}
+	
+	/**
+	 * Sets the <code>Sandcrawler</code> of this <code>SWActor</code>.
+	 * <p>
+	 * Used by the <code>SWActor</code>when going back to the original world <code>SWWorld</code> from <code>SandcrawlerWorld</code>
+	 *
+	 * @param 	s the <code>Sandcrawler</code> to be set
+	 */
+	public void setSandcrawler(SWActor s) {
+		this.s = s;
+	}
+	
+	/**
+	 * Gets the <code>Sandcrawler</code> of this <code>SWActor</code>.
+	 * <p>
+	 * Used by the <code>SWActor</code>when going back to the original world <code>SWWorld</code> from <code>SandcrawlerWorld</code>
+	 *
+	 * @return 	s the <code>Sandcrawler</code> to be set
+	 */
+	public SWActor getSandcrawler() {
+		return this.s;
 	}
 	
 	
