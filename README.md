@@ -9,6 +9,9 @@ This game is based on an engine (located in the packages with prefix edu.monash.
 In this game, players assume the role of Luke Skywalker, one of the central characters in the Star Wars saga. They will encounter and interact with other main actors such as Ben Kenobi, Droids, Sandcrawlers, and Tusken Raiders. Each actor in the game moves according to pre-programmed directions, exhibiting unique abilities and behaviors that contribute to the game's depth and complexity.
 
 
+![game_screenshot](https://github.com/chailam/Star-War-2D-Game/assets/30400152/5bf6f4cb-b2c8-4cb3-8f89-5da1f0a581fd)
+[Game Screenshot]
+
 ## Features
 
 ### Example Actors
