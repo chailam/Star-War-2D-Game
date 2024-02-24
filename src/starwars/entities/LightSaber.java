@@ -16,6 +16,7 @@ import starwars.actions.Take;
  * other lightsabers; there are also no restrictions on who wields it.
  * 
  *  @author Robert
+ *  @author Chai Lam, extended the functionality
  *  @see {@link starwars.actions.Attack}
  */
 

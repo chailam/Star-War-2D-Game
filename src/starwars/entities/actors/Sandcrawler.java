@@ -15,6 +15,11 @@ import starwars.actions.Enter;
 import starwars.actions.Move;
 import starwars.entities.actors.behaviors.Patrol;
 
+/**
+	 * For Sandcrawler
+	 * @author chailam
+	 */
+
 public class Sandcrawler extends SWActor {
 	
 	private Patrol path;

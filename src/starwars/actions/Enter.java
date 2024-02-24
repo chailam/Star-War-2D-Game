@@ -8,6 +8,11 @@ import starwars.SWEntityInterface;
 import starwars.SWLocation;
 import starwars.SWWorld;
 
+/**
+	 * The action "Enter"
+	 * @author 	chailam
+	 */
+
 public class Enter extends SWAffordance{
 	
 	/**

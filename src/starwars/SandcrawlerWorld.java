@@ -4,6 +4,10 @@ import edu.monash.fit2099.simulator.userInterface.MessageRenderer;
 import starwars.entities.Door;
 
 
+	/**
+	 * Set up the world for Sandcrawler
+	 * @author 	chailam
+	 */
 
 
 public class SandcrawlerWorld extends SWWorld{
@@ -41,7 +45,7 @@ public class SandcrawlerWorld extends SWWorld{
 		//Set the door
 		loc =  getGrid().getLocationByCoordinates(exitX,exitY);
 		Door door = new Door(iface);
-		door.setSymbol("це");
+		door.setSymbol("О©╫О©╫");
 		SWWorld.getEntitymanager().setLocation(door, loc);
 	}
 	

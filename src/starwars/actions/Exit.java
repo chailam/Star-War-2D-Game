@@ -8,6 +8,11 @@ import starwars.SWEntityInterface;
 import starwars.SWLocation;
 import starwars.SWWorld;
 
+/**
+	 * The action "Exit"
+	 * @author 	chailam
+	 */
+
 public class Exit extends SWAffordance{
 	
 	/**

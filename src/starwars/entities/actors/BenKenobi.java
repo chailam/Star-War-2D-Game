@@ -21,6 +21,7 @@ import starwars.entities.actors.behaviors.Patrol;
  * 
  * Note that you can only create ONE Ben, like all SWLegends.
  * @author rober_000
+ * @author Chai Lam, extended the functionality of Ben Kenobi
  *
  */
 public class BenKenobi extends SWLegend {
